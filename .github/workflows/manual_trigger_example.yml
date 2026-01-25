@@ -1,17 +1,17 @@
 name: Workflow triggered manually
 
 on: 
-workflow_dispatch:
-  inputs:
-    education:
-      type: choice
-      description: Select place of education
-      options: 
-        - school
-        - university
-        - college
-      message:
-        required: true
+  workflow_dispatch:
+    inputs:
+      education:
+        type: choice
+        description: Select place of education
+        options: 
+            - school
+            - university
+            - college
+        message:
+          required: true
 
 jobs:
   manually-triggered:
