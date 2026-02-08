@@ -1,0 +1,13 @@
+name: Farmyard time
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  manually-triggered:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cowsays
+        uses: mscoutermarsh/cowsays-action@v1
+        with:
+          text: "Hello staffs!"
